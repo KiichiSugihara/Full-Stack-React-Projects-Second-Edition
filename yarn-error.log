@@ -1,0 +1,36 @@
+Arguments: 
+  /Users/sugiharakiichi/.anyenv/envs/nodenv/versions/12.14.0/bin/node /Users/sugiharakiichi/.yarn/bin/yarn.js init
+
+PATH: 
+  /Users/sugiharakiichi/.anyenv/envs/nodenv/versions/12.14.0/bin:/Users/sugiharakiichi/.anyenv/envs/nodenv/libexec:/Users/sugiharakiichi/.anyenv/envs/nodenv/plugins/nodenv-vars/bin:/Users/sugiharakiichi/.anyenv/envs/nodenv/plugins/nodenv-default-packages/bin:/Users/sugiharakiichi/.anyenv/envs/nodenv/plugins/node-build/bin:/Users/sugiharakiichi/.yarn/bin:/Users/sugiharakiichi/.config/yarn/global/node_modules/.bin:/Users/sugiharakiichi/.anyenv/envs/pyenv/shims:/Users/sugiharakiichi/.anyenv/envs/pyenv/bin:/Users/sugiharakiichi/.anyenv/envs/nodenv/shims:/Users/sugiharakiichi/.anyenv/envs/nodenv/bin:/Users/sugiharakiichi/.nodenv/bin:/Users/sugiharakiichi/.nodenv/bin:/Users/sugiharakiichi/.nodenv/bin:/Users/sugiharakiichi/.nodenv/bin:/Users/sugiharakiichi/.nodenv/bin:/Users/sugiharakiichi/.anyenv/envs/pyenv/shims:/Users/sugiharakiichi/.anyenv/envs/pyenv/bin:/Users/sugiharakiichi/.anyenv/envs/nodenv/shims:/Users/sugiharakiichi/.anyenv/envs/nodenv/bin:/Users/sugiharakiichi/.anyenv/bin:/Users/sugiharakiichi/.anyenv/envs/pyenv/shims:/Users/sugiharakiichi/.anyenv/envs/pyenv/bin:/Users/sugiharakiichi/.anyenv/envs/nodenv/shims:/Users/sugiharakiichi/.anyenv/envs/nodenv/bin:/Users/sugiharakiichi/.anyenv/bin:/Users/sugiharakiichi/opt/anaconda3/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/sugiharakiichi/Library/Python/3.7/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.14.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/Users/sugiharakiichi/.yarn/lib/cli.js:137008:13)
+      at Interface.emit (events.js:210:5)
+      at Interface._ttyWrite (readline.js:887:16)
+      at ReadStream.onkeypress (readline.js:191:10)
+      at ReadStream.emit (events.js:210:5)
+      at emitKeys (internal/readline/utils.js:433:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1153:36)
+      at ReadStream.emit (events.js:210:5)
+      at addChunk (_stream_readable.js:309:12)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
