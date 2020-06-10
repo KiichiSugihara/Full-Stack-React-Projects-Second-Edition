@@ -1,0 +1,125 @@
+{
+  "info": {
+    "_postman_id": "e2ee4fcb-b24e-475f-b78f-600dd5a69b15",
+    "name": "mernproject",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "users",
+      "item": [
+        {
+          "name": "ユーザーリスト取得",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/users/",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "users", ""]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "userIdでユーザー詳細取得 認証なし",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/users/?userId=5ee002cf56f0063fa2af45e6",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "users", ""],
+              "query": [
+                {
+                  "key": "userId",
+                  "value": "5ee002cf56f0063fa2af45e6"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "userIdでユーザー詳細取得 認証あり",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/users/5ee002cf56f0063fa2af45e6",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["api", "users", "5ee002cf56f0063fa2af45e6"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": {}
+    },
+    {
+      "name": "auth",
+      "item": [
+        {
+          "name": "サインイン",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"email\": \"kiichi.sugihara@gmail.com\",\n\t\"password\": \"k245Qsw6ZRQvHTV\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/auth/signin",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "3000",
+              "path": ["auth", "signin"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": {}
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZWUwMDJjZjU2ZjAwNjNmYTJhZjQ1ZTYiLCJpYXQiOjE1OTE3NTI1ODB9.iFguI2nXzy5e9qAeRZfpSlDSy4ChuQ2ehiYg_pCWl-",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "7a013565-0cf6-40ae-8671-15fb430af6ba",
+        "type": "text/javascript",
+        "exec": [""]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "b92f962b-f8d8-43c8-970c-3aff41eb8fe0",
+        "type": "text/javascript",
+        "exec": [""]
+      }
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
